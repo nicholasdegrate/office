@@ -1,0 +1,8 @@
+
+
+<ul>
+    <% @managers.each do |manager|%>
+        <li><%= link_to manager.name, manager_path(manager) %></li>
+        <span><%= manager.age %></span>
+    <%end%>
+</ul>
